@@ -1,3 +1,21 @@
+# 训练Deblurganv2-mirnet
+该代码主要验证将生成器替换成mirnet后与原始模型的效果
+
+## 训练
+1. 首先修改config/config.yaml 和 config/config_mirnet.yaml中关于数据的路径，即train和val选项卡中的files_a和files_b 
+2. 运行训练文件 
+运行原始的训练配置
+```
+python train.py
+```
+运行修改后的mirnet生成器
+```
+python train_mirnet.py
+```
+
+
+
+# 原始的仓库readme
 # DeblurGAN-v2: Deblurring (Orders-of-Magnitude) Faster and Better
 
 Code for this paper [DeblurGAN-v2: Deblurring (Orders-of-Magnitude) Faster and Better](https://arxiv.org/abs/1908.03826)
